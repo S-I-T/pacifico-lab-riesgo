@@ -1,6 +1,6 @@
 # Pacífico - Laboratorio de Riesgo
 
-Desarrollo de pluviometro y sensor de nivel para el Laboratorio de Riesgo realizado por Pacifico.
+Desarrollo de pluviometro y sensor de nivel para el Laboratorio de Riesgo realizado por Pacífico en conjunto cin S.I.T.
 
 ### Materiales
 * Sparkfun Thing Dev (https://www.sparkfun.com/products/13711)
