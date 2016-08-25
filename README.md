@@ -2,6 +2,8 @@
 
 Desarrollo de pluviómetro y sensor de nivel para el Laboratorio de Riesgo realizado por Pacífico en conjunto con S.I.T.
 
+![alt tag](https://github.com/S-I-T/pacifico-lab-riesgo/blob/master/models/RENDER.png?raw=true)
+
 ### Materiales
 * Sparkfun Thing Dev (https://www.sparkfun.com/products/13711)
 * SparkFun Line Sensor Breakout - QRE1113 (Digital) (https://www.sparkfun.com/products/9454)
