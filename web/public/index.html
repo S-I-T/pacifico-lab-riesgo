@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    </head>
+    <body>
+        <header>
+            <table width="100%">
+                <tr>
+                    <td width="180px"><img class="logo" src="images/lab-riesgo.png"/></td>
+                    <td><h1 class="title">Simulacro de Inundación en Santiago</h1></td>
+                    <td width="58px"><img src="images/logo-intendencia.jpeg"/></td>
+                    <td width="65px"><img src="images/logo-gob-regional.png"/></td>
+                    <td width="77px"><img src="images/logo-resilient.jpeg"/></td>
+                    <td width="115px"><img src="images/logo-aguasandinas.png"/></td>
+                    <td width="140px"><img src="images/logo-pacifico.png"/></td>
+                </tr>
+            </table>
+        </header>
+
+        <div class="side">
+            <div id="all_sensors" class="title clickeable">Barrios</div>
+            <ul id="sensors"></ul>
+
+
+            <div class="title">Escala</div>
+            <ul>
+                <li>
+                    <img class="pin" src="images/pin-red.png">
+                    <span class="red">Evacuar</span>
+                </li>
+                <li>
+                    <img class="pin" src="images/pin-yellow.png">
+                    <span class="yellow">Avisar</span>
+                </li>
+                <li>
+                    <img class="pin" src="images/pin-green.png">
+                    <span class="green">Normal</span>
+                </li>
+            </ul>
+        </div>
+
+        <div id="map"></div>
+
+        <!--
+        <div id="graphs"></div>
+        -->
+
+        <div id="controls">
+            <button id="heatmapToogle"><img src="images/icon-heatmap.png"></button>
+        </div>
+
+        <script src="js/libraries/jquery-1.12.1.js"> </script>
+        <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCnwgoFNfc5o3KEtVAV-dwcqd_8eWpyHjA&signed_in=true&libraries=visualization"></script>
+        <script src="//www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+        <script src="js/libraries/markerwithlabel.js" type="text/javascript"></script>
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script>
+          var config = {
+            apiKey:         "<api key>",
+            authDomain:     "<firebase id>.firebaseapp.com",
+            databaseURL:    "https://<firebase id>.firebaseio.com",
+            storageBucket:  "<firebase id>.appspot.com",
+          };
+          firebase.initializeApp(config);
+        </script>
+
+        <script src='js/main.js'></script>
+    </body>
+
+</html>

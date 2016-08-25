@@ -1,0 +1,134 @@
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #E5E4E2;
+}
+
+header{
+    position:absolute;
+    width:100%;
+    height: 60px;
+    background: rgba(255,255,255, 1);
+    border-bottom: #DDDDDD;
+    z-index: 100;
+}
+
+header .title{
+    color: #333333;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+header td{
+    text-align: center;
+}
+
+.side{
+    position:absolute;
+    top: 61px;
+    width :200px;
+    height: 100%;
+    background: #FFFFFF;
+    z-index: 100;
+    padding-top: 25px;
+}
+
+.side .title{
+    font-size: 20px;
+    font-weight: bold;
+    padding:10px;
+}
+.side ul{
+    list-style-type: none;
+    padding: 5px;
+    border-top :1px solid #CCC;
+}
+.side li{
+    font-size: 16px;
+    border-bottom :1px solid #CCC;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.side .red{
+    color: red;
+    padding-left: 10px;
+}
+.side .yellow{
+    color: #CCCC00;
+    padding-left: 10px;
+}
+.side .green{
+    color: green;
+    padding-left: 10px;
+}
+.side .clickeable{
+    cursor:pointer;
+}
+.side .pin{
+    max-height: 30px;
+    width: auto;
+}
+
+#map {
+    position:absolute;
+    bottom:0px;
+    left: 200px;
+    right:0px;
+    top: 61px;
+}
+
+#graphs{
+    position:absolute;
+    left: 200px;
+    bottom:5px;
+    width :500px;
+    height: 200px;
+    background: rgba(255,255,255,0.5);
+    z-index: 110;
+    margin: 5px;
+}
+
+#controls{
+    position: absolute;
+    right: 5px;
+    bottom: 80px;
+    width: 30px;
+    background: rgba(255,255,255,0.1);
+    z-index: 110;
+    margin: 5px;
+}
+
+#controls button{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #DDD;
+    margin: 1px;
+    background: rgba(255,255,255,1);
+    background-color: white;
+    border-radius: 2px;
+}
+#controls button:focus {
+    outline:0;
+}
+
+.labels {
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    text-align: left;
+    border: 1px solid black;
+    padding:5px;
+}
+.labels .value{
+    color:red;
+}
+.labels .date{
+    font-size: 8px;
+    color:#999999;
+    margin-top: 5px;
+    text-align: right;
+}
